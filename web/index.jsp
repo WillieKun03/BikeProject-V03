@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
-    Created on : 20/03/2018, 11:37:32 AM
-    Author     : Willie
+    Created on : 22/03/2018, 02:56:09 PM
+    Author     : Nyaruko
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,22 +9,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Comentarios</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Retos Personalizados</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="subsection" href="createChallenge.jsp">
     </head>
     <body>
-        <div class='form'>
-            <h5>Agrega un comentario:</h5><br>
-            Nombre: <input type="text" id="name" /><br /><br />
-            Fecha: <input type="date" id="date" /><br /><br />
-            Comentario: <textarea rows="5" col="30" id="bodyText"></textarea><br /><br />
-            <input type="button" id="addComment" value="Agregar" />
+        <div class="myAddChallenge">
+            <form name="button" action="createChallenge.jsp">
+                <input type="submit" id="addChallenge" value="Agregar nuevo" ><br>
+            </form>
         </div>
-        <div id='container'>
-            
+        <div class="myTittle" >
+            <h1>Retos Personalizados</h1>
         </div>
+        <div id="container"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="script.js" type="text/javascript"></script>
     </body>
-    
 </html>
